@@ -3,7 +3,7 @@
 import program from 'commander';
 import chalk from 'chalk';
 import { init } from './init';
-import pkg from '../package.json';
+const pkg = require('../package.json');
 
 
 export function options(): void {
