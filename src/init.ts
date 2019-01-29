@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-export const init = (pkg: string): void => {
+export const init = (): void => {
 	console.log('Initilize ts-cli');
 }
