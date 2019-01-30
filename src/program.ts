@@ -7,11 +7,14 @@ const pkg = require('../package.json');
 
 
 export function options(): void {
-	program
-		.version(pkg.version)
-		.command('init')
-		.action(init)
-		.parse(process.argv);
+	program.version(pkg.version);
 
+	program.command('init')
+		.alias('i')
+		.description('Initilize your cli app')
+		.action(() => init());
+
+	program.parse(process.argv);
+	
 	if (!process.argv.slice(2).length) program.help();
 }
