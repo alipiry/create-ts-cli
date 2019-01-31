@@ -137,5 +137,24 @@ Temporary Items
   "license": "MIT"
 }
 `
-  }
+  },
+	{
+		name: 'tsconfig.json',
+		data: `
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"lib": ["es6", "es2015", "dom"],
+		"declaration": true,
+		"outDir": "lib",
+		"rootDir": "src",
+		"strict": true,
+		"types": ["node"],
+		"esModuleInterop": true,
+		"resolveJsonModule": true
+	}
+}
+`
+	}
 ];
