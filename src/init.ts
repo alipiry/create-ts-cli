@@ -3,6 +3,7 @@ import { filesToWrite } from './consts';
 
 export function init(dir: string): void {
 	if (!fs.existsSync(dir)) fs.mkdirSync(dir);
+	if (!fs.existsSync('src')) fs.mkdirSync('src');
 	
 	filesToWrite.forEach(index => {
 		fs.writeFile(
