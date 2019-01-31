@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import program from 'commander';
 import chalk from 'chalk';
 import { init } from './init';
@@ -9,10 +7,11 @@ const pkg = require('../package.json');
 export function options(): void {
 	program.version(pkg.version);
 
-	program.command('init')
+	program
+		.command('init <dir>')
 		.alias('i')
 		.description('Initilize your cli app')
-		.action(() => init());
+		.action((dir) => init(dir));
 
 	program.parse(process.argv);
 	
