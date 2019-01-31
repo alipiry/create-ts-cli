@@ -1,36 +1,19 @@
-#!/usr/bin/env node
-
 import fs from 'fs';
+import { filesToWrite } from './consts';
 
-export function init(): void {
-	if (!fs.existsSync('example')) fs.mkdirSync('example');
-
-// temp solution
-	fs
-		.writeFile(
-			'example/.gitignore',
-			'',
-			(err) => {
+export function init(dir: string): void {
+	if (!fs.existsSync(dir)) fs.mkdirSync(dir);
+	
+	filesToWrite.forEach(index => {
+		fs.writeFile(
+			`${dir}/${index.name}`,
+			index.data,
+			'utf8',
+			err => {
 				if (err) throw err;
 			}
-		)
-
-	fs
-		.writeFile(
-			'example/package.json',
-			'',
-			(err) => {
-				if (err) throw err;
-			}
-		)
-	fs
-		.writeFile(
-			'example/tsconfig.json',
-			'',
-			(err) => {
-				if (err) throw err;
-			}
-		)
+		);
+	});
 
 	console.log('Initilize ts-cli');
 }
