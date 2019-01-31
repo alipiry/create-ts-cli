@@ -108,6 +108,7 @@ Icon
 .DocumentRevisions-V100
 .fseventsd
 .Spotlight-V100
+B
 .TemporaryItems
 .Trashes
 .VolumeIcon.icns
@@ -122,5 +123,19 @@ Temporary Items
 
 # 
 `
-	}
+	},
+	{
+		name: 'package.json',
+		data: `
+{
+  "name": "example",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "bin": {
+    "example": "./lib/index.js"
+  },
+  "license": "MIT"
+}
+`
+  }
 ];
