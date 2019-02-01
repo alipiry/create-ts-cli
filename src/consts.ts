@@ -121,7 +121,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# 
+#
 `
   },
   {
@@ -130,11 +130,28 @@ Temporary Items
 {
   "name": "example",
   "version": "1.0.0",
+  "description": "TS CLI",
   "main": "./lib/index.js",
   "bin": {
     "example": "./lib/index.js"
   },
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/reponame.git"
+  },
+  "keywords": [
+    "cli",
+    "typescript",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Your name <youremail>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc -p ."
+  },
+  "homepage": "https://github.com/yourusername/reponame#readme"
 }
 `
   },
