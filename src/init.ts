@@ -3,7 +3,7 @@ import { filesToWrite } from './consts';
 
 export function init(dir: string): void {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir);
-  if (!fs.existsSync('src')) fs.mkdirSync('src');
+  if (!fs.existsSync(`${dir}/src`)) fs.mkdirSync(`${dir}/src`);
 
   filesToWrite.forEach(index => {
     fs.writeFile(
@@ -15,6 +15,14 @@ export function init(dir: string): void {
       }
     );
   });
+
+  fs.rename(
+    `${dir}/index.ts`,
+    `${dir}/src/index.ts`,
+    err => {
+      if (err) throw err;
+    }
+  );
 
   console.log('Initilize ts-cli');
 }
