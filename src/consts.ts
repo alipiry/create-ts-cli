@@ -1,12 +1,12 @@
 type File = {
-	name: string,
-	data: string
+  name: string,
+  data: string
 };
 
 export const filesToWrite: Array<File> = [
-	{
-		name: '.gitignore',
-		data: `
+  {
+    name: '.gitignore',
+    data: `
 # Created by https://www.gitignore.io/api/osx,node
 # Edit at https://www.gitignore.io/?templates=osx,node
 
@@ -123,10 +123,10 @@ Temporary Items
 
 # 
 `
-	},
-	{
-		name: 'package.json',
-		data: `
+  },
+  {
+    name: 'package.json',
+    data: `
 {
   "name": "example",
   "version": "1.0.0",
@@ -138,23 +138,23 @@ Temporary Items
 }
 `
   },
-	{
-		name: 'tsconfig.json',
-		data: `
+  {
+    name: 'tsconfig.json',
+    data: `
 {
-	"compilerOptions": {
-		"target": "es5",
-		"module": "commonjs",
-		"lib": ["es6", "es2015", "dom"],
-		"declaration": true,
-		"outDir": "lib",
-		"rootDir": "src",
-		"strict": true,
-		"types": ["node"],
-		"esModuleInterop": true,
-		"resolveJsonModule": true
-	}
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es6", "es2015", "dom"],
+    "declaration": true,
+    "outDir": "lib",
+    "rootDir": "src",
+    "strict": true,
+    "types": ["node"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  }
 }
 `
-	}
+  }
 ];
