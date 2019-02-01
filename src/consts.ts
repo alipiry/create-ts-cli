@@ -156,5 +156,13 @@ Temporary Items
   }
 }
 `
+  },
+  {
+  name: 'index.ts',
+  data: `
+#!/usr/bin/env node
+
+console.log('you must edit src/index.ts to program your app');
+`
   }
 ];
