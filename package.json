@@ -6,25 +6,25 @@
   "bin": {
     "create-ts-cli": "./lib/index.js"
   },
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/alipiry/create-ts-cli.git"
-	},
-	"keywords": [
-		"create-ts-cli",
-		"cli",
-		"boilerplate",
-		"typescript",
-		"javascript",
-		"nodejs"
-	],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alipiry/create-ts-cli.git"
+  },
+  "keywords": [
+    "create-ts-cli",
+    "cli",
+    "boilerplate",
+    "typescript",
+    "javascript",
+    "nodejs"
+  ],
   "author": "Ali Piry <alipiry@icloud.com>",
   "license": "MIT",
   "scripts": {
     "dev": "ts-node src/index.ts",
     "build": "tsc -p ."
   },
-	"homepage": "https://github.com/alipiry/create-ts-cli#readme",
+  "homepage": "https://github.com/alipiry/create-ts-cli#readme",
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^2.19.0"
