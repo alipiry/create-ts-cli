@@ -151,7 +151,12 @@ Temporary Items
     "dev": "ts-node src/index.ts",
     "build": "tsc -p ."
   },
-  "homepage": "https://github.com/yourusername/reponame#readme"
+  "homepage": "https://github.com/yourusername/reponame#readme",
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.2.4"
+  }
 }
 `
   },
