@@ -175,11 +175,29 @@ Temporary Items
 `
   },
   {
-  name: 'index.ts',
-  data: `
+    name: 'index.ts',
+    data: `
 #!/usr/bin/env node
 
 console.log('you must edit src/index.ts to program your app');
+`
+  },
+  {
+    name: 'tslint.json',
+    data: `
+{
+  "extends": "tslint-config-standard",
+  "rules": {
+    "semicolon": [true, "always"],
+    "indent": [true, "spaces"],
+    "ter-indent": [true, 2],
+    "space-before-function-paren": ["error", {
+      "anonymous": "always",
+      "named": "never",
+      "asyncArrow": "ignore"
+    }]
+  }
+}
 `
   }
 ];
