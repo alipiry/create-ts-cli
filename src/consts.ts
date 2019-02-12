@@ -155,7 +155,9 @@ Temporary Items
   "devDependencies": {
     "@types/node": "^10.12.18",
     "ts-node": "^8.0.2",
-    "typescript": "^3.2.4"
+    "typescript": "^3.2.4",
+    "tslint": "^5.12.1",
+    "tslint-config-standard": "^8.0.1"
   }
 }
 `
