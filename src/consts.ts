@@ -153,11 +153,11 @@ Temporary Items
   },
   "homepage": "https://github.com/yourusername/reponame#readme",
   "devDependencies": {
-    "@types/node": "^10.12.18",
-    "ts-node": "^8.0.2",
-    "typescript": "^3.2.4",
-    "tslint": "^5.12.1",
-    "tslint-config-standard": "^8.0.1"
+    "@types/node": "latest",
+    "ts-node": "latest",
+    "typescript": "latest",
+    "tslint": "latest",
+    "tslint-config-standard": "latest"
   }
 }
 `
