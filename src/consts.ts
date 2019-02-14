@@ -135,23 +135,17 @@ Temporary Items
   "bin": {
     "example": "./lib/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yourusername/reponame.git"
-  },
   "keywords": [
     "cli",
     "typescript",
     "javascript",
     "nodejs"
   ],
-  "author": "Your name <youremail>",
   "license": "MIT",
   "scripts": {
     "dev": "ts-node src/index.ts",
     "build": "tsc -p ."
   },
-  "homepage": "https://github.com/yourusername/reponame#readme",
   "devDependencies": {
     "@types/node": "latest",
     "ts-node": "latest",
