@@ -1,11 +1,20 @@
 import fs from 'fs';
 import chalk from 'chalk';
+import shell from 'shelljs';
 
 import { filesToWrite } from './consts';
+
+function initilizeGit(dir: string): void {
+  shell.cd(dir);
+  shell.exec('git init');
+  shell.cd('..');
+}
 
 export function init(dir: string): void {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir);
   if (!fs.existsSync(`${dir}/src`)) fs.mkdirSync(`${dir}/src`);
+
+  initilizeGit(dir);
 
   filesToWrite.map(index => {
     fs.writeFile(
