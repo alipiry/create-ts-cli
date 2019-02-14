@@ -1,8 +1,7 @@
 import program from 'commander';
-import chalk from 'chalk';
+
 import { init } from './init';
 const pkg = require('../package.json');
-
 
 export function options(): void {
   program.version(pkg.version);
