@@ -128,10 +128,10 @@ Temporary Items
     data: `{
   "name": "ts-cli",
   "version": "1.0.0",
-  "description": "TS CLI",
+  "description": "NodeJS CLI using TypeScript",
   "main": "./lib/index.js",
   "bin": {
-    "example": "./lib/index.js"
+    "ts-cli": "./lib/index.js"
   },
   "keywords": [
     "cli",
