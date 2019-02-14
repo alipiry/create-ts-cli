@@ -43,7 +43,7 @@ Clone the project:
 
 Install dependencies and dev dependencies:
 ```bash
-  > cd tite-cli/
+  > cd create-ts-cli/
   > yarn
 ```
 
