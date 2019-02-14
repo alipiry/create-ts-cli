@@ -6,8 +6,7 @@ type File = {
 export const filesToWrite: Array<File> = [
   {
     name: '.gitignore',
-    data: `
-# Created by https://www.gitignore.io/api/osx,node
+    data: `# Created by https://www.gitignore.io/api/osx,node
 # Edit at https://www.gitignore.io/?templates=osx,node
 
 ### Node ###
@@ -126,8 +125,7 @@ Temporary Items
   },
   {
     name: 'package.json',
-    data: `
-{
+    data: `{
   "name": "ts-cli",
   "version": "1.0.0",
   "description": "TS CLI",
@@ -158,8 +156,7 @@ Temporary Items
   },
   {
     name: 'tsconfig.json',
-    data: `
-{
+    data: `{
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
@@ -184,8 +181,7 @@ console.log('you must edit src/index.ts to program your app');
   },
   {
     name: 'tslint.json',
-    data: `
-{
+    data: `{
   "extends": "tslint-config-standard",
   "rules": {
     "semicolon": [true, "always"],
