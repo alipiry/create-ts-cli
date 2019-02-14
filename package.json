@@ -24,7 +24,7 @@
     "dev": "ts-node src/index.ts",
     "build": "tsc -p .",
     "add-lib" : "git add lib/ && git commit -m 'Auto-generated files'",
-    "pub": "yarn build && yarn publish --access=public"
+    "pub": "yarn build && yarn add-lib && yarn publish --access=public"
   },
   "homepage": "https://github.com/alipiry/create-ts-cli#readme",
   "dependencies": {
