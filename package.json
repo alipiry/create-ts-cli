@@ -22,7 +22,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node src/index.ts",
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "pub": "yarn build && yarn publish --access=public"
   },
   "homepage": "https://github.com/alipiry/create-ts-cli#readme",
   "dependencies": {
