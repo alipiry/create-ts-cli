@@ -23,7 +23,7 @@
   "scripts": {
     "dev": "ts-node src/index.ts",
     "build": "tsc -p .",
-    "lib" : "git add -A && git commit -m 'Auto-generated files'",
+    "add-lib" : "git add lib/ && git commit -m 'Auto-generated files'",
     "pub": "yarn build && yarn publish --access=public"
   },
   "homepage": "https://github.com/alipiry/create-ts-cli#readme",
