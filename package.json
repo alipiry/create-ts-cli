@@ -1,6 +1,6 @@
 {
   "name": "@alipiry/create-ts-cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "NodeJS CLI boilerplate generator using TypeScript",
   "main": "./lib/index.js",
   "bin": {
