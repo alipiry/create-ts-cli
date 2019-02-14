@@ -5,7 +5,7 @@ export function init(dir: string): void {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir);
   if (!fs.existsSync(`${dir}/src`)) fs.mkdirSync(`${dir}/src`);
 
-  filesToWrite.forEach(index => {
+  filesToWrite.map(index => {
     fs.writeFile(
       `${dir}/${index.name}`,
       index.data,
