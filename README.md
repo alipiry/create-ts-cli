@@ -1,6 +1,9 @@
 # [create-ts-cli](https://github.com/alipiry/create-ts-cli)
 Create your `nodeJS` CLI apps and program them in `TypeScript` with no configuration troubles.
 
+## Demo
+[![asciicast](https://asciinema.org/a/227612.svg)](https://asciinema.org/a/227612)
+
 ## Requirements
 To use this package, make sure you have `yarn` installed on your machine:
 
